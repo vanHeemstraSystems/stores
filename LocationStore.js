@@ -1,3 +1,6 @@
+var alt = require('../libraries/alt');
+var LocationActions = require('../actions/LocationActions');
+
 class LocationStore {
   constructor() {
     this.locations = [];
@@ -17,8 +20,9 @@ class LocationStore {
     // be smart and render a spinner for us since the data is empty.
     this.locations = [];
   }
-
   handleLocationsFailed(errorMessage) {
     this.errorMessage = errorMessage;
   }
 }
+
+module.exports = alt.createStore(LocationStore, 'LocationStore');
