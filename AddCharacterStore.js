@@ -1,4 +1,4 @@
-import alt from '../alt'; /* TO DO: ADJUST PATH TO alt.js */
+import alt from '../libraries/alt';
 import AddCharacterActions from '../actions/AddCharacterActions';
 
 class AddCharacterStore {
