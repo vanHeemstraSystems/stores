@@ -1,4 +1,4 @@
-import {assign, contains} from 'underscore';
+import {assign, contains} from '../libraries/underscore';
 import alt from '../libraries/alt';
 import CharacterActions from '../actions/CharacterActions';
 
